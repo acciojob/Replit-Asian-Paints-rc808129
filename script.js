@@ -13,7 +13,7 @@ document.getElementById('change_button').addEventListener('click', function() {
     document.getElementById(blockId).style.backgroundColor = color;
 });
 
-document.getElementById('Reset').addEventListener('click', function() {
+document.getElementById('Reset_button').addEventListener('click', function() {
     let items = document.querySelectorAll('.grid-item');
     items.forEach(item => {
         item.style.backgroundColor = 'transparent'; // or original color
