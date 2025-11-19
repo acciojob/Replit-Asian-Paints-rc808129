@@ -1,1 +1,15 @@
 /*  your css code here. If applicable */
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* 3 columns, each 100px wide */
+    grid-template-rows: repeat(3, 100px); /* 3 rows, each 100px tall */
+    gap: 5px; /* Optional: space between grid items */
+}
+
+.grid-item {
+    border: 1px solid black; /* Optional: border for visibility */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    background-color: transparent; /* Default background color */
+}
