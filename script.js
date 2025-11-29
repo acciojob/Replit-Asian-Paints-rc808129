@@ -17,22 +17,20 @@ document.getElementById('change_button').addEventListener('click', function() {
 		values.style.backgroundColor = 'transparent';
 	}
 	values = document.getElementById(blockId)
-    // let items = document.querySelectorAll('.grid-item');
-    // items.forEach(item => {
-    //     item.style.backgroundColor = 'transparent';
-    // });
+    
 
     document.getElementById(blockId).style.backgroundColor = color;
 });
 
 document.getElementById('reset_button').addEventListener('click', function() {
-    let items = document.querySelectorAll('.grid-item');
+  
 
-    // items.forEach(item => {
-    //     item.style.backgroundColor = 'transparent';
-    // });
-	values.style.backgroundColor = 'transparent';
-	
-	 document.getElementById('block_id').value = "";
+    if (values) {
+        values.style.backgroundColor = 'transparent';
+        values = null;
+    }
+
+    document.getElementById('block_id').value = "";
     document.getElementById('colour_id').value = "";
 });
+
